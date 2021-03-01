@@ -5,28 +5,105 @@
 }
 
 body {
-    background-color:rgb(123, 202, 255);
+    background-color: rgb(164, 214, 230);
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
 }
 
 .title {
-    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.row {
+    width: 100%;
+}
+
+.item {
+    background-image: url(img/pattern.png);
+    background-size: contain;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 22%;
+    height: 180px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.balloon.item {
+    background-image: none;
+}
+
+.item .imagecard {
+    display: none;
+    width: 100%;
+}
+
+.item .card {
+    font-size: 20px;
+    display: none;
     text-align: center;
 }
 
-.card {
-    height: 140px;
-    width: 120px;
-    background-color: white;
-    border-radius: 8px;
-    float: left;
-    margin: 30px;
+.balloon .imagecard, .balloon .card {
+    display: block;
 }
 
-.card {
-    background-image: url(img/pattern.png);
-    background-size: contain;
+.item:hover .imagecard {
+    display: block;
+}
+.item:hover .card {
+    display: block;
+}
+
+.item:hover {
+    display: block;
+    background-image: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card.balloon {
+    color: rgb(179, 30, 179);
+}
+
+.card.tractor {
+    color: rgb(242, 163, 15);
+}
+
+.card.tram {
+    color: rgb(55, 181, 174);
+}
+
+.card.ship {
+    color: rgb(201, 48, 48);
+}
+
+.card.bicycle {
+    color: rgb(170, 146, 67);
+}
+
+.card.submarine {
+    color: rgb(41, 255, 13);
 }
 
 .foot {
-    text-align:center
-}
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+} 
